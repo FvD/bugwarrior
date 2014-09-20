@@ -1,17 +1,17 @@
-from bugwarrior.services.trac import TracService
+from bugwarrior.services.fossil import FossilService
 
 from base import ServiceTest
 
 
-class TestTracIssue(ServiceTest):
+class TestFossilIssue(ServiceTest):
     SERVICE_CONFIG = {
-        'trac.base_uri': 'http://ljlkajsdfl.com',
-        'trac.username': 'something',
-        'trac.password': 'somepwd',
+        'fossil.base_uri': 'http://ljlkajsdfl.com',
+        'fossil.username': 'something',
+        'fossil.password': 'somepwd',
     }
 
     def setUp(self):
-        self.service = self.get_mock_service(TracService)
+        self.service = self.get_mock_service(FossilService)
 
     def test_to_taskwarrior(self):
         arbitrary_issue = {

@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services.mplan import MegaplanService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestMegaplanIssue(ServiceTest):

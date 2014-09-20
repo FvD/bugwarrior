@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services.redmine import RedMineService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestRedmineIssue(ServiceTest):

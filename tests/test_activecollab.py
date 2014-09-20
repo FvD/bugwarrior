@@ -7,7 +7,7 @@ from bugwarrior.services.activecollab import (
     ActiveCollabService
 )
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestActiveCollabIssue(ServiceTest):

@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services.bz import BugzillaService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestBugzillaService(ServiceTest):

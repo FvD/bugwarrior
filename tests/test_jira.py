@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services.jira import JiraService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestJiraIssue(ServiceTest):

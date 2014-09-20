@@ -4,7 +4,7 @@ import pytz
 
 from bugwarrior.services.github import GithubService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestGithubIssue(ServiceTest):

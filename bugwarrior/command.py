@@ -33,7 +33,7 @@ def pull():
         lockfile_path = os.path.join(
             os.path.expanduser(
                 tw_config['data']['location']
-            ),
+                ),
             'bugwarrior.lockfile'
         )
 

@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services import Issue
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestTemplates(ServiceTest):

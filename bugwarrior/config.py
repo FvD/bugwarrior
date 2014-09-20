@@ -86,7 +86,8 @@ error_template = """
 *   {msg}
 * Here's an example template to help:           *
 *************************************************
-{example}"""
+"""
+#{example}""" (removed example for debugging)
 
 
 def die(msg):

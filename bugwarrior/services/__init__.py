@@ -538,7 +538,7 @@ from .github import GithubService
 from .teamlab import TeamLabService
 from .redmine import RedMineService
 from .trac import TracService
-
+from .fossil import FossilService
 
 # Constant dict to be used all around town.
 SERVICES = {
@@ -548,6 +548,7 @@ SERVICES = {
     'bugzilla': BugzillaService,
     'teamlab': TeamLabService,
     'redmine': RedMineService,
+   'fossil': FossilService,
 }
 
 try:
@@ -577,5 +578,11 @@ except ImportError:
 try:
     from .phab import PhabricatorService
     SERVICES['phabricator'] = PhabricatorService
+except ImportError as e:
+    pass
+
+try:
+    from .fossil import FossilService
+    SERVICES['fossil'] = FossilService
 except ImportError as e:
     pass

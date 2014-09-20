@@ -2,7 +2,7 @@ import mock
 
 from bugwarrior.services.teamlab import TeamLabService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestTeamlabIssue(ServiceTest):

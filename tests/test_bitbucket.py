@@ -1,6 +1,6 @@
 from bugwarrior.services.bitbucket import BitbucketService
 
-from .base import ServiceTest
+from base import ServiceTest
 
 
 class TestBitbucketIssue(ServiceTest):
